@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#mensagem {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+}
+
+#imagens {
+    width: 700px;
+    height: 420px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+#iniciar, #sim, #nao, #reiniciar{
+    padding: 20px 30px;
+    font-size: 20px;
+}
+
+#iniciar{
+    background-color: rgb(115, 164, 255);
+    color: rgb(255, 255, 255);
+    border-radius: 15%;
+    border-color: rgb(0, 42, 133);
+
+}
+
+#sim{
+    background-color: rgb(116, 255, 116);
+    color: rgb(0, 100, 0);
+    border-color: rgb(0, 100, 0);
+
+}
+
+#nao{
+    background-color: rgb(255, 105, 85);
+    color: rgb(100, 0, 0);
+    border-color: rgb(100, 0, 0);
+}
+
+#reiniciar{
+    background-color: rgb(115, 164, 255);
+    color: rgb(255, 255, 255);
+    border-radius: 15%;
+    border-color: rgb(0, 42, 133);
+}
+
+.img_escolhida{
+    justify-content: center;
+    align-items: center;
+}
+
+.img_escolhida img {
+    width: 200px;
+    height: 200px;
+}
+
+/*
+modal
+*/
+.close-modal {
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    background-color: white;
+    padding: 6rem;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    font-family: sans-serif;
+    justify-content: center;
+    text-align: justify;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+  }
+
+  .opcao{
+      margin: 15px 0;
+      font-size: 20px;
+      cursor: pointer;
+  }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="mensagem"></div>
+    <div id="imagens">
+        <!-- <img src="img/airlines/1.jpg" alt="">
+        <img src="img/airlines/2.jpg" alt="">
+        <img src="img/airlines/3.jpg" alt="">
+        <img src="img/airlines/4.jpg" alt="">
+        <img src="img/airlines/5.jpg" alt="">
+        <img src="img/airlines/6.jpg" alt="">
+        <img src="img/airlines/7.jpg" alt="">
+        <img src="img/airlines/8.jpg" alt="">
+        <img src="img/airlines/9.jpg" alt="">
+        <img src="img/airlines/10.jpg" alt="">
+        <img src="img/airlines/11.jpg" alt="">
+        <img src="img/airlines/12.jpg" alt="">
+        <img src="img/airlines/13.jpg" alt="">
+        <img src="img/airlines/14.jpg" alt="">
+        <img src="img/airlines/15.jpg" alt=""> -->
+    </div>
+    <div id="interface">
+        <button id="iniciar" onclick="iniciar()" hidden>Iniciar</button>
+        <button id="sim" onclick="resposta(true)" hidden>SIM</button>
+        <button id="nao" onclick="resposta(false)" hidden>NÃO</button>
+        <button id="reiniciar" onclick="init()" hidden>⟳ Reiniciar</button>
+
+    </div>
+    <div class="modal">
+        <h1>Escolha um tema:</h1>
+        <div id="airlines" class="opcao">
+            &#9992 Companhias aéreas
+        </div>
+        <div id="cachorros" class="opcao">
+            &#128054 Cachorrinhos
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
